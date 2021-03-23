@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/")
+@RequestMapping("/welcome")
 public class WelcomeServiceApplication {
 
-    @GetMapping("techtter")
+    @GetMapping("/techtter")
     public String getWelcomeMessage() {
         return "<h1> Welcome to TECHTTER Channel...!! </h1>";
     }
