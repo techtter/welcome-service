@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/welcome")
+@RequestMapping("/")
 public class WelcomeServiceApplication {
 
-    @GetMapping
+    @GetMapping("techtter")
     public String getWelcomeMessage() {
-        return "<h1 Welcome to TECHTTER Channel...!! </h1>";
+        return "<h1> Welcome to TECHTTER Channel...!! </h1>";
     }
 
     public static void main(String[] args) {
